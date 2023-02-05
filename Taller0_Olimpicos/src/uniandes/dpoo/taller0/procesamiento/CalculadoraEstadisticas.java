@@ -435,11 +435,12 @@ public class CalculadoraEstadisticas
 	 * @param nombreAtleta El nombre del atleta que se está buscando
 	 * @return El deportista con el nombre dado o null si no se encuentra.
 	 */
-	public Atleta buscarDeportista(String nombreAtleta)
+	public String buscarPaisDeportista(String nombreAtleta)
 	{
 		Atleta elDeportista = buscarAtleta(nombreAtleta);
+		String nombrePais = elDeportista.darPais().darNombre();
 		
-		return elDeportista;
+		return nombrePais;
 	}
 	
 	/**
