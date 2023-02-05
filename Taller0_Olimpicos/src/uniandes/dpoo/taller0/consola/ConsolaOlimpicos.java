@@ -412,10 +412,9 @@ public class ConsolaOlimpicos
 		System.out.println("\n" + "País por atleta");
 		String nombre = input("Escriba el nombre del atleta");
 
-		Atleta atleta = calculadora.buscarDeportista(nombre);
-		Pais country = atleta.darPais(); 
-		System.out.println("El atleta buscado es: " + atleta.darNombre());
-		System.out.println("El pais es: " + country.darNombre());
+		String nombrePais = calculadora.buscarPaisDeportista(nombre);
+		System.out.println("El atleta buscado es: " + nombre);
+		System.out.println("El pais es: " + nombrePais);
 		
 	}
 	/**
